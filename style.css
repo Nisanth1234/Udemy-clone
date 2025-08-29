@@ -84,6 +84,16 @@ body {
     background-color: #A435F0;
     padding: 10px;
     border-radius: 20px;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+}
+.categories p:hover{
+    color: black;
+    transition: 1s;
+    border: solid #A435F0 1px;
+    color:black;
+    background-color: transparent;
+    
 }
 .saleimage{
     position: relative;
@@ -95,7 +105,24 @@ body {
     border: solid black 2px;
     top: 25%;
     left: 10%;
+    animation-name: saleimg;
+     opacity: 0 ;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
 }
+@keyframes saleimg {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    
+}
+
 
 .saleimage img {
     width: 100%;
