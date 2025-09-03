@@ -14,7 +14,7 @@ body {
     border-bottom: solid black 1px;
     gap: 10px;
     flex-direction: row;
-    justify-content: center;
+   
     align-items: center;
     position: sticky;
     top: 0;
@@ -53,6 +53,9 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.section-four{
+    display: none;
 }
 .Mylearnings{
     position: relative;
@@ -135,7 +138,9 @@ body {
 
 
 .coures-card {
-    width: 300px;
+    flex-basis: 22%;
+    flex-grow: 1;
+    margin-left: 10px;
 
 }
 
@@ -195,3 +200,27 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+/* media queries */
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .coures-card{
+        flex-basis: 40%;
+    }
+     .categories{
+        display: none;
+    }
+    .section-three ,.section-two{
+        display: none;
+    }
+    .section-four{
+        display: block;
+    }
+    
+}
+
